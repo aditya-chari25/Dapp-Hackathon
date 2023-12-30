@@ -14,7 +14,7 @@ $(function() {
     // listen for new chat messages from our server
     // these are all sent over the Hedera consensus service!
     socket.on("chat message", function(msg) {
-  
+      console.log(msg)
       const jsonMsg = JSON.parse(msg);
       // Grab the specifically formatted message string
       const operatorId = jsonMsg.operatorAccount;

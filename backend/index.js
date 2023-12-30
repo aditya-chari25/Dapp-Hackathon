@@ -55,7 +55,7 @@ async function init() {
 }
 
 function runChat() {
-    app.use(express.static("public"));
+    app.use(express.static("../frontend"));
     http.listen(0, function () {
         const randomInstancePort = http.address().port;
         open("http://localhost:" + randomInstancePort);
