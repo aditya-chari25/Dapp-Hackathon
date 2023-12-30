@@ -52,11 +52,12 @@ $(function() {
     socket.on("connect message", function(msg) {
       /* send new connection message */
       const connectMessage = JSON.parse(msg)
+      $("#clientsideid").text("User id- "+ connectMessage.operatorAccount + "@" + connectMessage.client);
       $("#messages").append(
-        $("<li>").text('new connection: ' + connectMessage.operatorAccount + "@" + connectMessage.client).addClass("new-connection"));
+        $("<li>").text('Your conversation comes here').addClass("new-connection"));
       /* update this clients topic id */
       const topicId = document.getElementById("topic-id");
-      topicId.innerHTML = "Topic: " + connectMessage.topicId;
+      topicId.innerHTML = "Discussion-ID: " + connectMessage.topicId;
     });
   
     // listen for client disconnections from our server

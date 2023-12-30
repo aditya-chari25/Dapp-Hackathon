@@ -62,6 +62,7 @@ function runChat() {
     });
     subscribeToMirror();
     io.on("connection", function (client) {
+        console.log(client)
         const connectMessage = {
             operatorAccount: operatorAccount,
             client: client.id,
@@ -121,6 +122,7 @@ function subscribeToMirror() {
                     log("Response from TopicMessageQuery()", message, logStatus);
                     const mirrorMessage = new TextDecoder("utf-8").decode(message.contents);
                     const messageJson = JSON.parse(mirrorMessage);
+                    console.log(messageJson)
                     log("Parsed mirror message", logStatus);
                     const runningHash = UInt8ToString(message["runningHash"]);
                     const timestamp = secondsToDate(message["consensusTimestamp"]);
@@ -194,7 +196,6 @@ async function configureNewTopic() {
         logStatus
     );
     await sleep(9000);
-
 }
 
 async function configureExistingTopic(existingTopicId) {
