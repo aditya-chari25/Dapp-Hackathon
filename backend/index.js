@@ -171,8 +171,8 @@ function configureAccount(account, key) {
         // we should try and fallback to the .env configuration
         if (account === "" || key === "") {
             log("init()", "using default .env config", logStatus);
-            operatorAccount = '0.0.6288664';
-            hederaClient.setOperator('0.0.6288664', '3030020100300706052b8104000a04220420da3223fd2f216df9f7aad60d0705f5f213d8fcf5154140e4a8645c7abccf7cb3');
+            operatorAccount = process.env.MY_ACCOUNT_ID;
+            hederaClient.setOperator(process.env.MY_ACCOUNT_ID, process.env.MY_PRIVATE_KEY);
         }
         // Otherwise, let's use the initalization parameters
         else {

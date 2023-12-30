@@ -16,6 +16,7 @@ $(function() {
     socket.on("chat message", function(msg) {
       console.log(msg)
       const jsonMsg = JSON.parse(msg);
+      console.log(jsonMsg)
       // Grab the specifically formatted message string
       const operatorId = jsonMsg.operatorAccount;
       const clientId = jsonMsg.client;
