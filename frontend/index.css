@@ -74,6 +74,7 @@
     flex-direction: row;
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-left: -1vw;
   }
   
   #sequence-number {
@@ -97,6 +98,7 @@
     border-radius: 30px;
     bottom: 4%;
     width: calc(98% - 360px);
+    margin-left: 3vw;
   }
   
   form input {
@@ -104,22 +106,26 @@
     outline: none;
     padding: 20px;
     width: calc(94% - 120px);
+    border-radius: 30px;
   }
   
   input::placeholder {
     font-size: 14px;
     font-style: italic;
   }
-  
+
   form button {
-    color: white;
-    background: url('./assets/send-icon.png');
+    color: grey;
+    font-size: 0.95rem;
+    /* background-color: black; */
+    /* background: url(./assets/send-icon.png); */
     background-size: contain;
     border: none;
-    padding: 10px;
+    /* padding: 10px; */
     margin: 10px;
-    height: 60px;
+    /* height: 60px; */
     width: 60px;
+    border-radius: 30px;
   }
   
   #messages {
@@ -168,6 +174,7 @@
     display: flex;
     flex-direction: column;
   }
+  
   
   .message-body .message-content {
     box-sizing: border-box;
@@ -242,7 +249,7 @@
   }
   #topic-id{
     font-size:20px;
-    margin-left: 2vw;
+    margin-left: 3.7vw;
     color:rgb(221,222,224)
   }
   
