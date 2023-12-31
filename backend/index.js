@@ -37,6 +37,7 @@ let logStatus = "Default";
 async function init() {
     inquirer.prompt(questions).then(async function (answers) {
         try {
+            console.log(answers)
             logStatus = answers.status;
             console.log(answers.status)
             configureAccount(answers.account, answers.key);

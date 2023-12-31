@@ -127,6 +127,10 @@
     width: 60px;
     border-radius: 30px;
   }
+
+  button:hover{
+    background: rgba(112, 124, 151, 0.7);;
+  }
   
   #messages {
     display: flex;
