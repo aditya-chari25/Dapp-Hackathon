@@ -19,3 +19,14 @@ One can also verify your chat transactions in the blockchain as well in Kabuto N
 ## Steps before running the application
 1. Create an account in the [Hedera Portal](https://portal.hedera.com/)
 2. After creation, the necessary private-public key pairs (DER) along with Account-ID is available to be used in this Chat Application
+
+## Application when running
+
+![dapp-login-create](https://github.com/aditya-chari25/Dapp-Hackathon/assets/84094715/d8a95bf8-4bcd-449d-9d67-d7e941ba4d64)
+
+The above image shows the creating room page with the necessary Rules/Instructions
+
+
+![dapp-chat](https://github.com/aditya-chari25/Dapp-Hackathon/assets/84094715/32114d0c-e456-4876-ad2c-5cc8d4824f25)
+
+The above image shows multiple users (2users) interacting with one another in a secure room
