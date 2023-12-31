@@ -10,10 +10,11 @@ New or existing Ids can be used for logging in into the room for discussion
 One can also verify your chat transactions in the blockchain as well in Kabuto Name Service which is built on Hedera Hashgraph
 
 ## Running the application:-
-1. Clone the repository
-2. cd backend/
-3. npm i
-4. node index.js
+- Clone the repository
+- cd backend/
+- npm i
+- node index.js
+- Open the website in the same port as shown in the terminal and you are good to go
 
 ## Steps before running the application
 1. Create an account in the [Hedera Portal](https://portal.hedera.com/)
