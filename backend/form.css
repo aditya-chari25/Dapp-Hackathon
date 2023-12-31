@@ -1,0 +1,48 @@
+.create{
+    color : rgb(221,222,224);
+}
+
+.create {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .create label {
+    text-align: left;
+    display: block;
+    color:rgb(221,222,224);
+  }
+  .create h2 {
+    font-size: 20px;
+    color: rgb(221,222,224);
+    margin-bottom: 30px;
+  }
+  .create input, .create textarea, .create select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius:10px;
+    box-sizing: border-box;
+    display: block;
+  }
+  .create button {
+    background: white;
+    color: black;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  ul{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .boxer{
+    border: 1px solid grey;
+    align-items: center;
+    text-align: center;
+    margin-top: 2vh;
+  }
