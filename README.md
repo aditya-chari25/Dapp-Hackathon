@@ -16,4 +16,5 @@ One can also verify your chat transactions in the blockchain as well in Kabuto N
 4. node index.js
 
 ## Steps before running the application
-1. create an account in the hedera 
+1. Create an account in the [Hedera Portal](https://portal.hedera.com/)
+2. After creation, the necessary private-public key pairs (DER) along with Account-ID is available to be used in this Chat Application
